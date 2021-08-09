@@ -44,7 +44,7 @@ sh make.sh
 
 ## Data Preparation
 
-We evaluate our method on two commonly-used benchmarks. Detailed data preparation commands can be found in [data/README.md](https://github.com/YoungXIAO13/FewShotDetection/tree/master/data/README.md)
+We evaluate our method on two commonly-used benchmarks. Detailed data preparation commands can be found in [data/README.md](https://github.com/liuweijie19980216/DRL-for-FSOD/tree/master/data/README.md)
 
 ### PASCAL VOC
  
