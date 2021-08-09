@@ -64,12 +64,6 @@ Download [COCO 2014](https://cocodataset.org/#home), create softlink named ``coc
 
 ## Getting Started
 
-### Base-Class Training
-
-**Pre-trained ResNet**:
-we used [ResNet101](https://www.dropbox.com/s/iev3tkbz5wyyuz9/resnet101_caffe.pth?dl=0) pretrained model on ImageNet in our experiments. 
-Download it and put it into the ``data/pretrained_model/``.
-
 We provide pre-trained models of 10-shot setting on COCO.
 ```bash
 wget https://www.dropbox.com/s/l04vfuaf3ir6410/save_models.zip?dl=0 && mv save_models.zip?dl=0 save_models.zip
@@ -81,8 +75,12 @@ You will get a dir like:
 save_models/
     COCO/
 ```
+### Base-Class Training
+**Pre-trained ResNet**:
+we used [ResNet101](https://www.dropbox.com/s/iev3tkbz5wyyuz9/resnet101_caffe.pth?dl=0) pretrained model on ImageNet in our experiments. 
+Download it and put it into the ``data/pretrained_model/``.
 
-You can also train it yourself:
+Base training on base classes with sufficient samples:
 ```bash
 # the first split on VOC
 bash run/train_voc_first.sh
