@@ -1,5 +1,4 @@
-
-﻿# Dynamic Relevance Learning for Few-Shot Object Detection
+# Dynamic Relevance Learning for Few-Shot Object Detection
 
 (arXiv) PyTorch implementation of paper "Dynamic Relevance Learning for Few-Shot Object Detection"
 [\[PDF\]](https://arxiv.org/abs/2108.02235)
