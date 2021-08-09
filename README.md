@@ -1,3 +1,4 @@
+
 ﻿# Dynamic Relevance Learning for Few-Shot Object Detection
 
 (arXiv) PyTorch implementation of paper "Dynamic Relevance Learning for Few-Shot Object Detection"
@@ -121,6 +122,26 @@ bash run/test_voc_third.sh
 
 bash run/test_coco.sh
 ```
+
+
+
+## Quantitative Results
+
+### Multiple Runs
+
+By running multiple times (~10) the few-shot fine-tuning experiments and averaging the results, we got the performance below:
+
+**Pascal-VOC Novel Set 1 (AP@50)**
+
+|           | shot=1| shot=2  | shot=3 | shot=5 | shot=10 |
+| :------: | :------:       | :------:        | :------:       | :------:        | :------:        |
+| [Meta RCNN](https://github.com/yanxp/MetaR-CNN)       |  19.9     |   25.5     |   35.0         |   45.7| 51.5|
+| [FSDetView](https://github.com/YoungXIAO13/FewShotDetection)      |  24.2         |   35.3         |   42.2         | 49.1|  57.4|
+| DRL(normal)      |  30.3        |   40.8          |   49.1        |    48.0|58.6|
+|  DRL(residual)       |  28.0         |   40.5         |   49.4        |    49.9|59.4|
+
+
+The detailed experimental results seen the [Paper](https://arxiv.org/abs/2108.02235)
 
 If our project is helpful for your research, please consider citing:
 ```
